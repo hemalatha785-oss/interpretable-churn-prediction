@@ -14,7 +14,7 @@ This project builds a machine learning model to predict customer churn using a t
 - Generate SHAP force plots for individual customer predictions
 - Identify counter-intuitive feature interactions
 ```
-credit-default-shap-project/
+interpretable-churn-prediction-project/
 │
 ├── project.ipynb
 ├── report.md
