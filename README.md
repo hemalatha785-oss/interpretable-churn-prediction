@@ -45,6 +45,43 @@ This project uses **SHAP** for:
 🔍 SHAP Interpretation
 ** Global Interpretability  **
 ** Local Interpretability  **
+# 🧠 Model Interpretability with SHAP
+
+Interpretability is critical in customer churn prediction, as it allows us to understand **why** the model makes certain decisions. SHAP (SHapley Additive exPlanations) provides two complementary perspectives:
+
+---
+
+## 🌍 Global Interpretability
+
+Global interpretability explains the **overall behavior of the model** across the entire dataset.
+
+- **Definition**: Identifies which features are most important in driving churn predictions for the population as a whole.
+- **Method**: SHAP summary plots aggregate feature contributions across all customers.
+- **Insights**:
+  - Short **tenure** strongly increases churn risk.
+  - **Month-to-month contracts** are highly associated with churn, while long-term contracts reduce risk.
+  - Lack of **OnlineSecurity** and **TechSupport** services consistently push predictions toward churn.
+  - **High monthly charges** combined with low total charges (new customers) are linked to churn.
+- **Use Case**: Helps businesses understand the main drivers of churn and design global retention strategies.
+
+---
+
+## 👤 Local Interpretability
+
+Local interpretability explains the **prediction for an individual customer**.
+
+- **Definition**: Breaks down how each feature contributed to a single customer’s churn prediction.
+- **Method**: SHAP force plots and dependence plots show feature-level impacts for one customer at a time.
+- **Insights**:
+  - For a churner with **low tenure** and **no security services**, SHAP highlights these as strong positive contributors to churn.
+  - For a loyal customer with a **two-year contract** and multiple add-on services, SHAP shows negative contributions that reduce churn probability.
+- **Use Case**: Enables personalized retention actions, such as offering discounts or service upgrades to at-risk customers.
+
+---
+
+> 📌 **Summary**:  
+Global interpretability answers *“What drives churn overall?”*  
+Local interpretability answers *“Why did this specific customer churn (or stay)?”*
 
 
 
