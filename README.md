@@ -55,9 +55,6 @@ This project uses **SHAP** for:
 ### Source
 - [Telco Customer Churn Dataset](https://www.kaggle.com/blastchar/telco-customer-churn)
 
-### Features
-| Column Name               | Description                                                  |
-|---------------------------|--------------------------------------------------------------|
 
 ## 🛠 How to Run the Project
 
