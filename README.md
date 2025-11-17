@@ -20,7 +20,8 @@ interpretable-churn-prediction-project/
 ├── report.md
 ├── requirements.txt
 ├── readme.md
-│
+|__ summary.md
+-
 └── plots/
     |--shap summary plot.png
     ├── customer1.png
