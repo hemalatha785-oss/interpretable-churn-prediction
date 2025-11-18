@@ -14,6 +14,8 @@ This project builds a machine learning model to predict customer churn using a t
 - Generate SHAP force plots for individual customer predictions
 - Identify counter-intuitive feature interactions
 ```
+##  Repository Structure
+
 
 
 **Repository Structure**
