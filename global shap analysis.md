@@ -1,8 +1,8 @@
-# 🌍 Global SHAP Analysis Summary
+#  Global SHAP Analysis Summary
 
 To understand the overall drivers of customer churn, we applied SHAP (SHapley Additive exPlanations) to the trained classification model. The SHAP summary plot provides a ranked visualization of feature importance and the direction of their impact on the model’s predictions.
 
-## 🔝 Top Features Influencing Churn
+##  Top Features Influencing Churn
 
 - **tenure**  
   Customers with shorter tenure are more likely to churn.  
@@ -23,7 +23,7 @@ To understand the overall drivers of customer churn, we applied SHAP (SHapley Ad
   High monthly charges combined with low total charges (indicating short tenure) are associated with churn.  
   Customers with high total charges and long tenure are less likely to churn.
 
-## 📈 SHAP Summary Plot Interpretation
+##  SHAP Summary Plot Interpretation
 
 - The **horizontal axis** represents SHAP values (impact on model output).
 - Each **dot** represents a customer; color indicates feature value (red = high, blue = low).
@@ -31,10 +31,10 @@ To understand the overall drivers of customer churn, we applied SHAP (SHapley Ad
 - **Red dots on the right** (positive SHAP values) indicate high feature values pushing toward churn.
 - **Blue dots on the left** (negative SHAP values) indicate low feature values pulling away from churn.
 
-## 🧠 Insights
+##  Insights
 
 - SHAP reveals **non-linear effects**: for example, tenure has a steep drop-off in churn risk after a certain threshold.
 - It also highlights **interactions**: customers with fiber optic internet and no security services are at higher risk.
 - These patterns would be missed by traditional feature importance metrics like Gini or permutation importance.
 
-> 📌 *Note: SHAP summary plots provide global interpretability by aggregating feature contributions across all predictions.*
+> *Note: SHAP summary plots provide global interpretability by aggregating feature contributions across all predictions.*
