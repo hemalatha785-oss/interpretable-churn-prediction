@@ -14,12 +14,10 @@ This project builds a machine learning model to predict customer churn using a t
 - Generate SHAP force plots for individual customer predictions
 - Identify counter-intuitive feature interactions
 ```
-##  Repository Structure
 
-
-
+```
 **Repository Structure**
-
+```
 interpretable-churn-prediction-project/
 │
 ├── project.ipynb
@@ -36,22 +34,39 @@ interpretable-churn-prediction-project/
     ├── customer4.png
     └── customer5.png
 ```
+---
 
-## Models Used
-- **XGBoost Classifier**
-
-
-### Evaluation Metrics
-- **AUC Score**
-- **F1 Score**
+##  Introduction
+- **Problem Statement:** Customer churn leads to significant business losses.  
+- **Objective:** Predict churn and understand key drivers using interpretable ML.  
+- **Importance:** Helps design targeted retention strategies and improve customer satisfaction.
 
 ---
 
-## Interpretability
-This project uses **SHAP** for:
- SHAP Interpretation
-** Global Interpretability  **
-** Local Interpretability  **
+##  Dataset
+- **Source:** [Insert dataset source here]  
+- **Size:** [Number of records, features]  
+- **Key Features:** Demographics, usage patterns, contract type, etc.  
+- **Preprocessing:**
+  - Missing value handling
+  - Encoding categorical variables
+  - Scaling/normalization
+
+---
+
+##  Methodology
+### Models Used
+- Logistic Regression  
+- Random Forest  
+- XGBoost  
+
+### Evaluation Strategy
+- Train-test split  
+- Cross-validation  
+- Metrics: Accuracy, Precision, Recall, F1-score, ROC-AUC  
+
+```
+```
 #  Model Interpretability with SHAP
 
 Interpretability is critical in customer churn prediction, as it allows us to understand **why** the model makes certain decisions. SHAP (SHapley Additive exPlanations) provides two complementary perspectives:
@@ -86,13 +101,13 @@ Local interpretability explains the **prediction for an individual customer**.
 
 ---
 
->  **Summary**:  
+ **Summary**:  
 Global interpretability answers *“What drives churn overall?”*  
 Local interpretability answers *“Why did this specific customer churn (or stay)?
 ---
 
 
-## 🛠 How to Run the Project
+##  How to Run the Project
 
 ### Option 1 — Google Colab (Recommended)
 1. Upload the dataset and notebook  
