@@ -1,4 +1,4 @@
-# 📦 Project Dependencies
+#  Project Dependencies
 
 Below is the `requirements.txt` file for this project:
 
